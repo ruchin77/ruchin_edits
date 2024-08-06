@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Video Editor & 3D Graphics Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Video Editor & 3D Graphic Designer</p>
+            <h1>Hi, I'm <span>Ruchin</span><br> From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="[Your Name]">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a skilled video editor and 3D graphics designer with experience in Adobe Premiere Pro, DaVinci Resolve, Blender, and After Effects. I specialize in crafting visually engaging videos and creating intricate 3D designs. My background includes a strong foundation in multimedia production and a passion for visual storytelling.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Video Editing</span><br>Expertise in Adobe Premiere Pro and DaVinci Resolve</li>
+                        <li><span>3D Graphics Design</span><br>Proficient in Blender and After Effects</li>
+                        <li><span>Animation</span><br>Creating dynamic animations and visual effects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Present</span><br>Freelance Video Editor & 3D Graphics Designer</li>
+                        <li><span>2022 - 2023</span><br>Video Editor at Creative Studio</li>
+                        <li><span>2021 - 2022</span><br>3D Graphics Designer at Visual Arts Ltd.</li>
+                        <li><span>2020 - 2021</span><br>Freelance Video Editor</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Bachelor’s in Computer Application</li>
+                        <li><span>2023</span><br>3D Graphics and Animation, Blender Institute</li>
+                        <li><span>2021</span><br>Advanced Video Editing Certification, Adobe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-video"></i>
+                <h2>Video Editing</h2>
+                <p>Professional video editing services using Adobe Premiere Pro and DaVinci Resolve to create compelling and polished video content.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-cube"></i>
+                <h2>3D Graphics Design</h2>
+                <p>Expert in 3D modeling, animation, and rendering with Blender and After Effects to create detailed and stunning visual designs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-film"></i>
+                <h2>Animation</h2>
+                <p>Custom animations and motion graphics to enhance visual storytelling and bring creative ideas to life.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <video controls>
+                    <source src="videos/project-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="layer">
+                    <h3>Travel Vlog</h3>
+                    <p>A vibrant travel video edited to capture the essence of adventure and exploration.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <video controls>
+                    <source src="videos/project-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="layer">
+                    <h3>Product Promo</h3>
+                    <p>An engaging promotional video highlighting the features and benefits of a new product.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <video controls>
+                    <source src="videos/project-3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="layer">
+                    <h3>Short Film</h3>
+                    <p>A short film featuring creative storytelling and cinematic editing.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Email - ruchinrastogi005@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>Call - +91 7455898709</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Ruchin. Made with love<i class="fas fa-heart"></i> by <a href="https://www.yourportfolio.com">Ruchin_edits</a></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
